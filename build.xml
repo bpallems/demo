@@ -105,6 +105,10 @@
     <property file="build.tag"/>
     <echo>Version for ${app.name} : "${year}.${release}.${patch}.${new.app.build.number}"</echo>
 
+    <exec executable="git" dir="${basedir}" failonerror="true">
+	    <arg value="branch"/>
+	</exec> 
+	
     <exec executable="git" dir="${basedir}" outputproperty="oput" failonerror="true">
 	    <arg value="commit"/>
 		<arg value="-am"/>
