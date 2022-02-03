@@ -117,6 +117,10 @@
 	</exec>
 	
 	<exec executable="git" dir="${basedir}" failonerror="true">
+	    <arg value="branch"/>
+	</exec>
+	
+	<exec executable="git" dir="${basedir}" failonerror="true">
 	    <arg value="push"/>
 	</exec>
 	
