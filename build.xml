@@ -1,4 +1,4 @@
-<project name="test" default="usage" basedir="." >
+<project name="demo" default="usage" basedir="." >
   <description>
     simple example build file
   </description>
