@@ -134,7 +134,7 @@
 	<exec executable="git" dir="${basedir}" failonerror="true">
 	    <arg value="push"/>
 		<arg value="origin"/>
-		<arg value="${branch}"/>
+		<arg value="${GIT_BRANCH}"/>
 	</exec>
 	
   </target>
