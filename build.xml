@@ -125,7 +125,7 @@
 	</exec>
 	
 	<exec executable="git" dir="${basedir}" failonerror="true">
-	    <arg value="push"/>
+	    <arg value="remote -v"/>
 	</exec>
 	
   </target>
