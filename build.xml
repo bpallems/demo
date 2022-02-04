@@ -132,8 +132,9 @@
 	</exec>
 	
 	<exec executable="git" dir="${basedir}" failonerror="true">
-	    <arg value="remote"/>
-		<arg value="-v"/>
+	    <arg value="push"/>
+		<arg value="origin"/>
+		<arg value="${branch}"/>
 	</exec>
 	
   </target>
