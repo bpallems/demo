@@ -131,11 +131,11 @@
 	    <arg value="branch"/>
 	</exec>
 	
-	<exec executable="git" dir="${basedir}" failonerror="true">
+	<!--exec executable="git" dir="${basedir}" failonerror="true">
 	    <arg value="push"/>
 		<arg value="origin"/>
 		<arg value="${branch_name}"/>
-	</exec>
+	</exec-->
 	
   </target>
 </project>
