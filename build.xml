@@ -127,14 +127,14 @@
 	    <arg value="status"/>
 	</exec>
 	
-	<exec executable="git" dir="${basedir}" failonerror="true">
+	<exec executable="git" dir="${basedir}" outputproperty="branch_name" failonerror="true">
 	    <arg value="branch"/>
 	</exec>
 	
 	<exec executable="git" dir="${basedir}" failonerror="true">
 	    <arg value="push"/>
 		<arg value="origin"/>
-		<arg value="${GIT_BRANCH}"/>
+		<arg value="${branch_name}"/>
 	</exec>
 	
   </target>
