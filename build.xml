@@ -139,6 +139,7 @@
 	
 	<exec executable="${basedir}/tag_push.bat" vmlauncher="false" failonerror="yes">
             <env key="tag" value="${version.number}"/>
+	</exec>
 	
   </target>
 </project>
