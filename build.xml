@@ -137,5 +137,8 @@
 		<arg value="${branch_name}"/>
 	</exec-->
 	
+	<exec executable="${basedir}/tag_push.bat" vmlauncher="false" failonerror="yes">
+            <env key="tag" value="${version.number}"/>
+	
   </target>
 </project>
