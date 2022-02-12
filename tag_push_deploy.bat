@@ -1,6 +1,7 @@
 COPY %WORKSPACE%\webapp\target\webapp.war %WORKSPACE%
 REM docker stop simple-regapp
 REM docker rm simple-regapp
+echo "---"
 echo tag - %tag%
 docker build -t bhanudocker3315/regapp:latest -t bhanudocker3315/regapp:%tag% %WORKSPACE%
 docker push bhanudocker3315/regapp:latest
